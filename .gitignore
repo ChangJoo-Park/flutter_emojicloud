@@ -29,3 +29,5 @@ migrate_working_dir/
 .packages
 build/
 node_modules/
+lib/flutter_emojicloud.dart
+lib/svg/Call me hand skin 3.svg.svg

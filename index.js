@@ -9,6 +9,11 @@ const PROPERTY_TEMPLATE = `static const String {{property}} = "{{path}}";`
 
 function resetSubmodule() {
     exec('git submodule foreach git reset --hard')
+    exec('git clone --recurse-submodules git@github.com:alohe/emojicloud.git')
+    exec('cd emojicloud')
+    exec('git submodule update --remote')
+    exec('git add .')
+    exec('git commit -m "git submodule emojicloud updated"')
 }
 
 function readSvgs(dir) {

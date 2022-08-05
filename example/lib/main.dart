@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:emojicloud/flutter_emojicloud.dart';
+import 'package:emojicloud/emojicloud.dart';
 import 'package:flutter_svg/svg.dart';
 
 void main() {

@@ -2,7 +2,7 @@
 
 A Flutter package using vector emoji from [emojicloud](https://github.com/alohe/emojicloud).
 
-This pakcage has no any other dependencies. It does not break your flutter_svg dependency.
+This pakcage has no any other dependencies. It does not break your [flutter_svg](https://pub.dev/packages/flutter_svg) dependency.
 
 ![](demo.gif)
 

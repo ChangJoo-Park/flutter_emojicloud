@@ -1,0 +1,16 @@
+{
+  "name": "flutter_emojicloud",
+  "version": "1.0.0",
+  "description": "- 자동화 해야함 - SVG를 가져와서 <defs> 가 맨 위로 올라오게 만들어서 assets 폴더로 이동 - 파일 이름을 이용해서 새로운 위젯 코드를 생성 - 위젯 템플릿을 만들어야함",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js"
+  },
+  "keywords": [],
+  "author": "ChangJoo Park (박창주)",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "rimraf": "^3.0.2"
+  }
+}

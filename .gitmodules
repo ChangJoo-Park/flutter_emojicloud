@@ -1,0 +1,3 @@
+[submodule "emojicloud"]
+	path = emojicloud
+	url = git@github.com:alohe/emojicloud.git

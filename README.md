@@ -1,6 +1,24 @@
-## TODO
+# Flutter EmojiCloud
 
-- 자동화 해야함
-- SVG를 가져와서 <defs> 가 맨 위로 올라오게 만들어서 assets 폴더로 이동
-- 파일 이름을 이용해서 새로운 위젯 코드를 생성
-- 위젯 템플릿을 만들어야함
+A Flutter package using vector emoji from [emojicloud](https://github.com/alohe/emojicloud).
+
+This pakcage has no any other dependencies. It does not break your flutter_svg dependency.
+
+## Installation
+
+```
+flutter pub add emojis
+flutter pub add flutter_svg
+```
+
+
+## Use with flutter_svg
+
+````dart
+SvgPicture.asset(
+    EmojiCloud.airplane,
+    package: 'emojicloud', // this line is required. :)
+    width: 200,
+    height: 200,
+),
+```

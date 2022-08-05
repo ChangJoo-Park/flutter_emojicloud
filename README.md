@@ -4,6 +4,9 @@ A Flutter package using vector emoji from [emojicloud](https://github.com/alohe/
 
 This pakcage has no any other dependencies. It does not break your flutter_svg dependency.
 
+![](demo.gif)
+
+
 ## Installation
 
 ```

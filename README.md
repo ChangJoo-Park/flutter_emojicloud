@@ -14,7 +14,7 @@ flutter pub add flutter_svg
 
 ## Use with flutter_svg
 
-````dart
+````
 SvgPicture.asset(
     EmojiCloud.airplane,
     package: 'emojicloud', // this line is required. :)

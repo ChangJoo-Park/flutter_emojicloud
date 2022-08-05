@@ -391,12 +391,17 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: SafeArea(
-        child: Container(
+        child: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: Stack(
             children: [
               SingleChildScrollView(
                 child: Wrap(
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  alignment: WrapAlignment.center,
+                  runAlignment: WrapAlignment.center,
+                  spacing: 4,
+                  runSpacing: 4,
                   children: emojis
                       .map(
                         (e) => GestureDetector(
@@ -410,11 +415,17 @@ class _MyHomePageState extends State<MyHomePage> {
                                   duration: const Duration(seconds: 1)),
                             );
                           },
-                          child: SvgPicture.asset(
-                            e,
-                            package: 'emojicloud',
-                            width: size,
-                            height: size,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(size / 4),
+                            ),
+                            child: SvgPicture.asset(
+                              e,
+                              package: 'emojicloud',
+                              width: size,
+                              height: size,
+                            ),
                           ),
                         ),
                       )
@@ -431,6 +442,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: const Text('Small'),
                         onPressed: () {
                           size = 24;
+
                           setState(() {});
                         },
                       ),
@@ -444,7 +456,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       TextButton(
                         child: const Text('Large'),
                         onPressed: () {
-                          size = 128;
+                          size = 256;
                           setState(() {});
                         },
                       )
